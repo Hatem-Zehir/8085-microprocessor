@@ -1,0 +1,21 @@
+# ORG 7200
+	   MVI A,50
+	   STA 8000
+	   MVI A,58
+	   STA 8001
+	   MVI A,20
+	   STA 8002
+	   MVI A,23
+	   STA 8003
+// **************************************************
+	   LDA 8000
+	   MOV B,A
+	   LDA 8002
+	   ADD B
+	   STA 8100
+	   LDA 8001
+	   MOV B,A
+	   LDA 8004
+	   ADC B
+	   STA 8101
+	   RST 1
